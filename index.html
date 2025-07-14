@@ -7,52 +7,132 @@
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/f56cc40642.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
     <div class="bg-container">
 
-        <nav class="bg-navbar">
+        <nav class="nav-container">
 
-            <div class="nav-left">
-                <i class="fa-solid fa-bars ham-menu"></i>
-                <img src="youtube_logo .png" class="nav-left-img" alt="">
-            </div>
+            <div class="bg-navbar">
+                <div class="bg-nav-left">
+                    <i class="fa-solid fa-bars ham-menu"></i>
+                    <img src="youtube_logo .png" class="bg-nav-img" alt="">
+                </div>
 
-            <div class="nav-right">
-                <i class="fa-solid fa-magnifying-glass search-bar"></i>
-                <i class="fa-solid fa-microphone microphone"></i>
-                <i class="fa-solid fa-ellipsis-vertical ellipse-menu"></i>
-                <div class="nav-right-user">
-                    <i class="fa-solid fa-circle-user profile"></i>
-                    <p>Sign in</p>
+                <div class="bg-nav-right">
+
+                    <i class="fa-solid fa-magnifying-glass search"></i>
+                    <i class="fa-solid fa-microphone microphone hide"></i>
+                    <i class="fa-solid fa-ellipsis-vertical ellipsis-menu"></i>
+                    <div class="nav-right-para">
+                        <i class="fa-regular fa-circle-user profile"></i>
+                        <p>Sign in</p>
+                    </div>
+                    
                 </div>
             </div>
 
         </nav>
 
-        <div class="bg-category">
-            <a href="">All</a>
-            <a href="">Music</a>
-            <a href="">Cinema</a>
-            <a href="">Podcasts</a>
-            <a href="">News</a>
-            <a href="">Gaming</a>
-            <a href="">Playlists</a>
-            <a href="">T-Series</a>
-            <a href="">Dramedy</a>
-            <a href="">Trailers</a>
-            <a href="">Indian pop music</a>
-            <a href="">Thrillers</a>
-            <a href="">Live</a>
-            <a href="">Albums</a>
-            <a href="">Camping</a>
-            <a href="">Mobile&nbsp;Phones</a>
-            <a href="">Cricket</a>
-            <a href="">Folk Music</a>
-            <a href="">Recently uploaded</a>
+        <div class="home-section">
+
+            <div class="home-section-left">
+
+            </div>
+
+            <div class="home-section-right">
+
+            </div>
+
+        </div>
+
+        <div class="hero-section">
+
+                <div class="hero-left-section">
+
+                </div>
+
+                <div class="hero-right-section">
+
+                    <div class="bg-category">
+                        <a href="">All</a>
+                        <a href="">Music</a>
+                        <a href="">Cinema</a>
+                        <a href="">Podcasts</a>
+                        <a href="">News</a>
+                        <a href="">Gaming</a>
+                        <a href="">Playlists</a>
+                        <a href="">T-Series</a>
+                        <a href="">Dramedy</a>
+                        <a href="">Trailers</a>
+                        <a href="">Indian pop music</a>
+                        <a href="">Thrillers</a>
+                        <a href="">Live</a>
+                        <a href="">Albums</a>
+                        <a href="">Camping</a>
+                        <a href="">Mobile&nbsp;Phones</a>
+                        <a href="">Cricket</a>
+                        <a href="">Folk Music</a>
+                        <a href="">Recently uploaded</a>
+                    </div>
+
+                    <div class="videos-container">
+
+                        <div class="video-section">
+                            <img src="https://res.cloudinary.com/dn98iuz9p/image/upload/v1752479532/youtube_ad_hy9luv.png" alt="" class="video-section-image">
+                            <div class="video-section-details">
+                                <img src="https://res.cloudinary.com/dn98iuz9p/image/upload/v1752479532/youtube_ad_logo_metdyt.png" class="video-section-logo" alt="">
+                                <div class="video-section-description">
+                                    <h2 class="video-section-head">Synced Devices | There's no place like Chrome</h2>
+                                    <p class="video-section-description">Google Chrome</p>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-vertical ellipsis-menu"></i>
+                            </div>
+                        </div>
+
+                        <div class="video-section">
+                            <img src="https://res.cloudinary.com/dn98iuz9p/image/upload/v1752479533/video-img-1_ll9d8h.png" alt="" class="video-section-image">
+                            <div class="video-section-details">
+                                <img src="https://res.cloudinary.com/dn98iuz9p/image/upload/v1752479531/video-logo-1_givf3x.jpg" class="video-section-logo" alt="">
+                                <div class="video-section-description">
+                                    <h2 class="video-section-head">Synced Devices | There's no place like Chrome</h2>
+                                    <p class="video-section-description">Google Chrome</p>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-vertical ellipsis-menu"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
         </div>
 
 
 
+
     </div>
+
+    <script>
+
+        const hero=document.querySelector('.home-section-left');
+        const hamMenu=document.querySelector('.ham-menu');
+
+        const heroRight=document.querySelector('.home-section-right');
+
+        hamMenu.addEventListener('click',function(){
+            console.log('Clicked');
+            hero.style.display='block';
+            heroRight.style.display='block';
+            
+        })
+
+        heroRight.addEventListener('click',function(){
+            hero.style.display='none';
+            heroRight.style.display='none';
+        })
+
+    </script>
+
 </body>
 </html>
