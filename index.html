@@ -138,14 +138,14 @@
         const hero=document.querySelector('.hero-section-left');
         const hamMenu=document.querySelector('.ham-menu');
         const hamMenu1=document.querySelector('.hero-section-ham-menu');
-        const hamMenu2=document.querySelector('.hero-section-right');
+        const bodyContainer=document.querySelector('.bg-container');
 
         const heroRight=document.querySelector('.home-section-right');
 
         hamMenu.addEventListener('click',function(){
             console.log('Clicked');
             hero.classList.remove('hidden');
-            hamMenu2.style.opacity='0.69';
+            bodyContainer.style.opacity='0.69';
             hero.style.zIndex='1';
 
         })
@@ -153,7 +153,7 @@
         hamMenu1.addEventListener('click',function(){
             console.log('Clicked');
             hero.classList.add('hidden');
-            hamMenu2.style.opacity='1';
+            bodyContainer.style.opacity='1';
         })
 
         heroRight.addEventListener('click',function(){
