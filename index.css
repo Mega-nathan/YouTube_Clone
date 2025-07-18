@@ -79,6 +79,10 @@
     align-items: center;
 }
 
+.hide{
+    display: none;
+}
+
 
 /* Hero Section Left - Side */
 
